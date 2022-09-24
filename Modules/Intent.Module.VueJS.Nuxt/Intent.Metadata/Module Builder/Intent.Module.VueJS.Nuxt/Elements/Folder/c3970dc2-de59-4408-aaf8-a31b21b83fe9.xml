@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="c3970dc2-de59-4408-aaf8-a31b21b83fe9" type="Folder" typeId="4d95d53a-8855-4f35-aa82-e312643f5c5f">
+  <name>layouts</name>
+  <display>layouts</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>16e86c70-f728-47d5-943b-67d044446335</parentFolderId>
+  <packageId>16e86c70-f728-47d5-943b-67d044446335</packageId>
+  <packageName>Intent.Module.VueJS.Nuxt</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

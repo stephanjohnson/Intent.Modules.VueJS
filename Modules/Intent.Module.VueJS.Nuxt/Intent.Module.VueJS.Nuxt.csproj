@@ -1,0 +1,92 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Intent.Modules.Common" Version="3.3.10" />
+    <PackageReference Include="Intent.Modules.Common.Html" Version="3.3.0" />
+    <PackageReference Include="Intent.Modules.Common.TypeScript" Version="3.3.2" />
+    <PackageReference Include="Intent.Packager" Version="3.3.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Intent.RoslynWeaver.Attributes" Version="2.0.1" />
+    <PackageReference Include="Intent.SoftwareFactory.SDK" Version="3.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Templates\NuxtConfigTs\NuxtConfigTsTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>NuxtConfigTsTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\PackageJson\PackageJsonTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PackageJsonTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\READMEMd\READMEMdTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>READMEMdTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\TsconfigJson\TsconfigJsonTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TsconfigJsonTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\Gitignore\GitignoreTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GitignoreTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\layouts\DefaultVue\DefaultVueTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DefaultVueTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Templates\pages\IndexVue\IndexVueTemplate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>IndexVueTemplate.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Templates\NuxtConfigTs\NuxtConfigTsTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>NuxtConfigTsTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\PackageJson\PackageJsonTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>PackageJsonTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\READMEMd\READMEMdTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>READMEMdTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\TsconfigJson\TsconfigJsonTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>TsconfigJsonTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\Gitignore\GitignoreTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>GitignoreTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\layouts\DefaultVue\DefaultVueTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>DefaultVueTemplate.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\pages\IndexVue\IndexVueTemplate.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>IndexVueTemplate.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+</Project>
